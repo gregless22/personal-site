@@ -8,7 +8,6 @@ lang: en-US
 - Hiking
 - Surfing
 - Running
-- Interests
 - Films
 - Cooking
 - Snowboarding
