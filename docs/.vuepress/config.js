@@ -13,6 +13,7 @@ module.exports = {
       "interests",
       "contact"
     ],
-    sidebarDepth: 0
+    sidebarDepth: 0,
+    smoothscroll: true
   }
 }
