@@ -11,3 +11,4 @@ lang: en-US
 - Interests
 - Films
 - Cooking
+- Snowboarding
