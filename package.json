@@ -2,5 +2,31 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  }
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vuetify": "^2.2.11"
+  },
+  "name": "gregless22",
+  "description": "This is just my personal website / resume built using Vuepress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregless22/personal-site.git"
+  },
+  "keywords": [
+    "cv",
+    "resume"
+  ],
+  "author": "Greg Connolly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gregless22/personal-site/issues"
+  },
+  "homepage": "https://github.com/gregless22/personal-site#readme"
 }

@@ -1,6 +1,7 @@
 //config.js
 module.exports = {
-  title: "Gregless22",
+  extend: "@vuepress/theme-default",
+  title: "Greg Connolly",
   description: "Portfolio and CV page",
   themeConfig: {
     navbar: false,
