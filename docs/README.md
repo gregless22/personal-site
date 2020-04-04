@@ -7,8 +7,6 @@ Hello There, I'm
 
 # Greg Connolly
 
-Junior Software Developer, Chemical Engineer
+Software Developer / Chemical Engineer
 
-TODO Links to
 
-SOCIALS
