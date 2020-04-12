@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 ## Interests
-</testing>
+<testing/>
 - Hiking
 - Surfing
 - Running
