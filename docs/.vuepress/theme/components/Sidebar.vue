@@ -1,6 +1,5 @@
 <template>
   <aside class="sidebar">
-    <h1>HELLOW</h1>
     <NavLinks />
 
     <slot name="top" />

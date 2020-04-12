@@ -9,4 +9,4 @@ lang: en-US
 
 #### Email: gregoryconnolly@gmail.com
 
-#### Location: Pottsville, NSW
+#### Location: Pottsville, NSW (But Willing to Move)

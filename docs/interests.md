@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 ## Interests
-
+</algolia-search-box>
 - Hiking
 - Surfing
 - Running
