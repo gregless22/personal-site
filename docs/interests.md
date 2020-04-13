@@ -5,15 +5,15 @@ interests:
     - name: Hiking
       icon: hiking
     - name: Surfing
-      icon: ""
+      icon: wave
     - name: Running
-      icon: ""
+      icon: running
     - name: Films
-      icon: ""
+      icon: video
     - name: Cooking
-      icon: ""
+      icon: pizza-slice
     - name: Snowboarding
-      icon: ""
+      icon: snowboarding
 ---
 
 ## Interests
@@ -25,5 +25,5 @@ interests:
 <font-awesome-icon :icon="['fab', 'font-awesome']" />
 </grid-container>
 <font-awesome-icon icon="hiking" />
-<font-awesome-icon :icon="['fab', 'font-awesome']" />
+<font-awesome-icon :icon="['fas', 'hiking']" />
 <font-awesome-icon :icon="['fas', 'user-secret']" />
