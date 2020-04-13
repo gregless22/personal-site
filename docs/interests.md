@@ -18,7 +18,7 @@ meta:
 
 ## Interests
 <grid-container>
-
+<vp-icon name="vue" />
 <div v-for="i in $frontmatter.meta">{{ i.name }} </div>
 
 </grid-container>
