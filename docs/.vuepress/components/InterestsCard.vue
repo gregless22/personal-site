@@ -1,6 +1,5 @@
 <template>
 <div>
-    <Content slot-key="icon"/>
     <slot name="icon" class="icon"></slot>
     <slot name="description" class="description"></slot>
 </div>
