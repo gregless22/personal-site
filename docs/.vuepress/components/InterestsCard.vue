@@ -1,6 +1,8 @@
 <template>
+<div>
 <slot name="description" class="description"></slot>
 <slot name="icon" class="icon"></slot>
+</div>
 </template>
 
 <script>
