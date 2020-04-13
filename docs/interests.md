@@ -18,7 +18,6 @@ interests:
 
 ## Interests
 <grid-container>
-<font-awesome-icon icon="user-secret" />
 <div v-for="i in $frontmatter.interests">
 <font-awesome-icon :icon="['fas', i.icon]" />{{ i.name }} </div>
 <font-awesome-icon icon="hiking" />
@@ -28,3 +27,4 @@ interests:
 <font-awesome-icon :icon="['fas', 'hiking']" />
 <font-awesome-icon :icon="['fas', 'user-secret']" />
 <font-awesome-icon :icon="['fab', 'font-awesome']" />
+<font-awesome-icon :icon="['fas', 'coffee']"/>
