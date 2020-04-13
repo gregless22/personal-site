@@ -28,3 +28,4 @@ interests:
 <font-awesome-icon :icon="['fas', 'user-secret']" />
 <font-awesome-icon :icon="['fab', 'font-awesome']" />
 <font-awesome-icon :icon="['fas', 'coffee']"/>
+<font-awesome-icon :icon="['fas', 'bolt']"/>
