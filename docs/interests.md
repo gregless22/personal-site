@@ -27,3 +27,4 @@ interests:
 <font-awesome-icon icon="hiking" />
 <font-awesome-icon :icon="['fas', 'hiking']" />
 <font-awesome-icon :icon="['fas', 'user-secret']" />
+<font-awesome-icon :icon="['fab', 'font-awesome']" />
