@@ -14,7 +14,7 @@ export default {
     .grid-container {  
         display: grid;
         grid-template-columns: auto auto auto;
-        padding: 10px;
-        grid-gap: 10px;
+        padding: 20px;
+        grid-gap: 30px;
         }
 </style>
