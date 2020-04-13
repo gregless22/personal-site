@@ -1,8 +1,7 @@
 <template>
 <div>
-    Hello
-    <!-- <slot name="icon" class="icon"></slot>
-    <slot name="description" class="description"></slot> -->
+    <slot name="icon" class="icon"></slot>
+    <slot name="description" class="description"></slot>
 </div>
 </template>
 
@@ -13,7 +12,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.icon {
-    padding: 10px;
-}
+    .icon {
+        border: 10px;
+    }
 </style>
