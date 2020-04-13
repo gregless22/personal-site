@@ -14,6 +14,7 @@ export default {
     .grid-container {  
         display: grid;
         grid-template-columns: auto auto auto;
-        background-color: #2196F3;
-        padding: 10px;}
+        padding: 10px;
+        grid-gap: 10px;
+        }
 </style>
