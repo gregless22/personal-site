@@ -1,18 +1,20 @@
 ---
 title: Interests
 lang: en-US
-interests:
-    - Hiking
-    - Surfing
-    - Running
-    - Films
-    - Cooking
-    - Snowboarding
+meta:
+    - name: Hiking
+        icon: ""
+    - name: Surfing
+  icon: ""
+    - name: Running
+    - name: Films
+    - name: Cooking
+    - name: Snowboarding
 ---
 
 ## Interests
 <grid-container>
 
-<span v-for="i in $frontmatter.interests">{{ i }} </span>
+<div v-for="i in $frontmatter.meta">{{ i.name }} </div>
 
 </grid-container>
