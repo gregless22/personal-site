@@ -1,7 +1,7 @@
 ---
 title: Interests
 lang: en-US
-meta:
+interests:
     - name: Hiking
       icon: ""
     - name: Surfing
@@ -18,7 +18,7 @@ meta:
 
 ## Interests
 <grid-container>
-<vp-icon name="vue" />
-<div v-for="i in $frontmatter.meta">{{ i.name }} </div>
+<font-awesome-icon icon="user-secret" />
+<div v-for="i in $frontmatter.interests">{{ i.name }} </div>
 
 </grid-container>

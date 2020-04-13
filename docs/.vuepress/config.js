@@ -16,8 +16,5 @@ module.exports = {
     ],
     sidebarDepth: 0,
     smoothscroll: true
-  },
-  plugins: [
-    '@goy/svg-icons'
-  ]
+  }
 }
