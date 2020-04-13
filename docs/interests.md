@@ -5,7 +5,7 @@ interests:
     - name: Hiking
       icon: hiking
     - name: Surfing
-      icon: wave
+      icon: water
     - name: Running
       icon: running
     - name: Films
@@ -14,18 +14,18 @@ interests:
       icon: pizza-slice
     - name: Snowboarding
       icon: snowboarding
+    - name: Camping
+      icon: camping
 ---
 
 ## Interests
 <grid-container>
-<div v-for="i in $frontmatter.interests">
-<font-awesome-icon :icon="['fas', i.icon]" />{{ i.name }} </div>
-<font-awesome-icon icon="hiking" />
-<font-awesome-icon :icon="['fab', 'font-awesome']" />
+<interests-card v-for="i in $frontmatter.interests">
+    <template v-slot:icon>
+        <font-awesome-icon :icon="['fas', i.icon]" />
+    </template>
+    <template v-slot:description>
+        {{ i.name }}
+    </template> 
+</interests-card>
 </grid-container>
-<font-awesome-icon icon="hiking" />
-<font-awesome-icon :icon="['fas', 'hiking']" />
-<font-awesome-icon :icon="['fas', 'user-secret']" />
-<font-awesome-icon :icon="['fab', 'font-awesome']" />
-<font-awesome-icon :icon="['fas', 'coffee']"/>
-<font-awesome-icon :icon="['fas', 'bolt']"/>
