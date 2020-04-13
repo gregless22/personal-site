@@ -15,7 +15,7 @@ interests:
     - name: Snowboarding
       icon: snowboarding
     - name: Camping
-      icon: camping
+      icon: campground
 ---
 
 ## Interests

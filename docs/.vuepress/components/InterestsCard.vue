@@ -13,6 +13,6 @@ export default {
 
 <style lang="css" scoped>
     .icon {
-        border: 10px;
+        padding: 10px;
     }
 </style>
