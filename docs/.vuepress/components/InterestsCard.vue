@@ -1,8 +1,8 @@
 <template>
 <div>
     Hello
-    <slot name="icon" class="icon"></slot>
-    <slot name="description" class="description"></slot>
+    <!-- <slot name="icon" class="icon"></slot>
+    <slot name="description" class="description"></slot> -->
 </div>
 </template>
 

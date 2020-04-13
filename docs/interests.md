@@ -22,12 +22,12 @@ interests:
 <grid-container>
 <span v-for="i in $frontmatter.interests">
 <interests-card>
-    <template v-slot:icon>
+    <!-- <template v-slot:icon>
         <font-awesome-icon :icon="['fas', i.icon]" />
     </template>
     <template v-slot:description>
         {{ i.name }}
-    </template> 
+    </template>  -->
 </interests-card>
 </span>
 </grid-container>
