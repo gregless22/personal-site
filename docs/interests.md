@@ -3,13 +3,17 @@ title: Interests
 lang: en-US
 meta:
     - name: Hiking
-        icon: ""
+      icon: ""
     - name: Surfing
-  icon: ""
+      icon: ""
     - name: Running
+      icon: ""
     - name: Films
+      icon: ""
     - name: Cooking
+      icon: ""
     - name: Snowboarding
+      icon: ""
 ---
 
 ## Interests
