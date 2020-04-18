@@ -20,7 +20,7 @@ module.exports = {
     nextLinks: false,
     prevLinks: false,
     sidebar: [
-
+      'about'
     ],
     sidebarDepth: 0,
     smoothscroll: true
