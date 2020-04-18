@@ -4,7 +4,7 @@ module.exports = {
   title: "Greg Connolly",
   description: "Portfolio and CV page",
   themeConfig: {
-    navbar: false,
+    navbar: true,
     sidebar: [
       "/",
       "about",

@@ -3,7 +3,6 @@ title: Experience
 lang: en-US
 ---
 
-<card-test></card-test>
 ## Experience
 
 ### Operations Engineer | Santos
