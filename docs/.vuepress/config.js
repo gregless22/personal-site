@@ -8,20 +8,18 @@ module.exports = {
     logo: '',
     navbar: true,
     nav: [
-      {text:"Home", link: "/"},
+      {text:"Home", link: "/pages/"},
       // {text:"About", link: "about"},
-      {text:"Experience", link: "experience"},
-      {text:"Education", link: "education"},
-      {text:"Skills", link: "skills"},
-      {text:"Interests", link: "interests"},
-      {text:"Contact", link: "contact"}
+      {text:"Experience", link: "/pages/experience"},
+      {text:"Education", link: "/pages/education"},
+      {text:"Skills", link: "/pages/skills"},
+      {text:"Interests", link: "/pages/interests"},
+      {text:"Contact", link: "/pages/contact"}
     ],
     search: false,
     nextLinks: false,
     prevLinks: false,
-    sidebar: [
-      'about'
-    ],
+    sidebar: true,
     sidebarDepth: 0,
     smoothscroll: true
   }
