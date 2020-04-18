@@ -3,6 +3,7 @@
     <slot name="top" />
 
     <Content class="theme-default-content" />
+    <div v-for "page in pages"></div>
     <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
@@ -17,7 +18,17 @@ import PageNav from "@theme/components/PageNav.vue"
 
 export default {
   components: { PageEdit, PageNav },
-  props: ["sidebarItems"]
+  props: ["sidebarItems"],
+  data() {
+    return {
+      pages:[]
+    }
+  },
+  mounted() {
+    this.$site.pages(page => {
+      return this.pages.push(page)
+    })
+  }
 }
 </script>
 
