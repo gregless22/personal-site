@@ -5,11 +5,11 @@ module.exports = {
   description: "Portfolio and CV page",
   plugins: ['vuepress-plugin-smooth-scroll'],
   themeConfig: {
-    logo: "/assets/img/logo.png",
+    logo: '/assets/logo.png',
     navbar: true,
     nav: [
       {text:"Home", link: "/"},
-      {text:"About", link: "about"},
+      // {text:"About", link: "about"},
       {text:"Experience", link: "experience"},
       {text:"Education", link: "education"},
       {text:"Skills", link: "skills"},
