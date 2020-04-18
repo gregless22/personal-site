@@ -16,6 +16,9 @@ module.exports = {
       {text:"Interests", link: "interests"},
       {text:"Contact", link: "contact"}
     ],
+    search: false,
+    nextLinks: false,
+    prevLinks: false,
     sidebar: [
 
     ],
