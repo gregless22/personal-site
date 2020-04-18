@@ -5,7 +5,7 @@ module.exports = {
   description: "Portfolio and CV page",
   plugins: ['vuepress-plugin-smooth-scroll'],
   themeConfig: {
-    logo: '/assets/logo.png',
+    logo: '',
     navbar: true,
     nav: [
       {text:"Home", link: "/"},
