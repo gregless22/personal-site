@@ -3,6 +3,7 @@
     <slot name="top" />
 
     <Content class="theme-default-content" />
+    <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
 
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import PageEdit from "@theme/components/PageEdit.vue"
 import PageNav from "@theme/components/PageNav.vue"
 
 export default {
