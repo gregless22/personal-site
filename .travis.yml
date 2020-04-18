@@ -10,13 +10,14 @@ addons:
     packages:
       - g++-4.8
 install:
-  - npm install -g vuepress
-  - npm install @fortawesome/fontawesome-svg-core
-  - npm install @fortawesome/free-solid-svg-icons
-  - npm install @fortawesome/vue-fontawesome
-  - npm install @fortawesome/free-brands-svg-icons
-  - npm install @fortawesome/free-regular-svg-icons
+  - npm i -g vuepress
+  - npm i @fortawesome/fontawesome-svg-core
+  - npm i @fortawesome/free-solid-svg-icons
+  - npm i @fortawesome/vue-fontawesome
+  - npm i @fortawesome/free-brands-svg-icons
+  - npm i @fortawesome/free-regular-svg-icons
   - npm i -D vuetify
+  - npm i -D vuepress-plugin-smooth-scroll
 script:
   - npm run docs:build
 cache:
