@@ -3,7 +3,7 @@
     <slot name="top" />
 
     <Content class="theme-default-content" />
-    <div v-for="page in pages"></div>
+    <div v-for="page in pages">hello</div>
     <PageEdit />
 
     <PageNav v-bind="{ sidebarItems }" />
