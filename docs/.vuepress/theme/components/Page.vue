@@ -5,7 +5,7 @@
     <Content class="theme-default-content" />
     <div v-for="page in pages">hello</div>
     <PageEdit />
-
+  {{pages}}
     <PageNav v-bind="{ sidebarItems }" />
 
     <slot name="bottom" />
