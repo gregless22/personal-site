@@ -1,5 +1,4 @@
 <template>
-  <!-- <v-btn> -->
   <div
     class="theme-container"
     :class="pageClasses"
@@ -21,14 +20,17 @@
 
     <Home v-if="$page.frontmatter.home" />
 
-    <Page v-else :sidebar-items="sidebarItems">
+    <!-- <Page v-else :sidebar-items="sidebarItems">
       <template #top>
         <slot name="page-top" />
       </template>
-      <!-- <template #bottom>
+      <template #bottom>
         <slot name="page-bottom" />
-      </template> -->
-    </Page>
+      </template>
+    </Page> -->
+
+  
+
   </div>
 </template>
 
@@ -51,11 +53,13 @@ export default {
 
   data() {
     return {
-      isSidebarOpen: false
+      isSidebarOpen: false,
     }
   },
-
   computed: {
+    pages() {
+      return this.$page.pages
+    },
     shouldShowNavbar() {
       const { themeConfig } = this.$site
       const { frontmatter } = this.$page
