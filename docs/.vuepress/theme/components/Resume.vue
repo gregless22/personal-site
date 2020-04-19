@@ -1,7 +1,8 @@
 <template>
   <main class="page">
     <slot name="top" />
-    <Content class="theme-default-content" />
+    <Content slot-key="about" class="theme-default-content" />
+    <Content slot-key="experience" class="theme-default-content" />
     <slot name="bottom" />
   </main>
 </template>

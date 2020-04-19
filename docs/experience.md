@@ -2,7 +2,7 @@
 title: Experience
 lang: en-US
 ---
-
+::: slot experience
 ## Experience
 
 ### Operations Engineer | Santos
@@ -32,3 +32,4 @@ Management of gas and condensate plant assets. Lead Engineer on various small to
 #### Australia
 
 Chemical engineering design for Caltex Oil Refinery for large unit shutdown and PSV upgrade
+:::
