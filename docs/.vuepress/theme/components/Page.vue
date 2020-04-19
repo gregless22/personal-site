@@ -21,8 +21,13 @@ export default {
   props: ["sidebarItems"],
   data() {
     return {
-      pages: this.$site.pages
+      pages:[]
     }
+  },
+  mounted() {
+    this.$site.pages(page => {
+      return this.pages.push(page)
+    })
   }
 }
 </script>
