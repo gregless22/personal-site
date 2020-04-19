@@ -25,9 +25,9 @@
       <template #top>
         <slot name="page-top" />
       </template>
-      <template #bottom>
+      <!-- <template #bottom>
         <slot name="page-bottom" />
-      </template>
+      </template> -->
     </Page>
   </div>
 </template>
