@@ -36,7 +36,8 @@
         <slot name="page-bottom" />
       </template>
   </Resume>
-  
+  {{this.$site.pages}}
+  {{this.$site}}
 
   </div>
 </template>
