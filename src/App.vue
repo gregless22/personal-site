@@ -3,7 +3,6 @@
     <div id="nav">
       <Layout></Layout>
     </div>
-    <router-view />
   </div>
 </template>
 
