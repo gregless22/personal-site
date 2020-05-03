@@ -41,6 +41,7 @@ jobs:
             cd temp
             git init
             git clone git@github.com:gregless22/gregless22.github.io.git
+            git pull origin master --allow-unrelated-histories
             git config user.email "sayhi@circleci.com"
             git config user.name "Deployment Bot"
             cd ..
