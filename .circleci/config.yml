@@ -11,8 +11,8 @@ jobs:
           steps:
             - run: npm install
             - persist_to_workspace:
-              - root: .
-              - paths: 
+              root: .
+              path: 
                 - /dist
   deploy:
     executor:
