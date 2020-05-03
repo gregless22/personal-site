@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build:
-    executer: node-executer 
+    executers: node-executer 
     steps:
       - checkout
       - run:
@@ -24,7 +24,7 @@ jobs:
           paths: 
           - dist
   deploy:
-    executer: node-executer    
+    executers: node-executer    
     steps:
       - attach_workspace:
           at: ./dist
