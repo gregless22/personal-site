@@ -27,7 +27,7 @@ jobs:
     executor: node-executor    
     steps:
       - attach_workspace:
-          at: ./dist
+          at: dist
       # - run: 
       #     name: Go into 'dist' directory
       #     command: cd ~/project/dist
@@ -46,7 +46,7 @@ jobs:
             git add -A
             git commit -m 'CircleCI Autodeploy'
             git pull --rebase git@github.com:gregless22/gregless22.github.io.git master
-            git push
+            git push git@github.com:gregless22/gregless22.github.io.git master
 
 workflows:
     build_and_deploy:
