@@ -1,9 +1,7 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16.3
+    executer: node-executer 
     steps:
       - checkout
       - run:
@@ -26,9 +24,7 @@ jobs:
           paths: 
           - dist
   deploy:
-    working_directory: ~/project
-    docker:
-      - image: circleci/node:10.16.3    
+    executer: node-executer    
     steps:
       - attach_workspace:
           at: ./dist
@@ -57,3 +53,9 @@ workflows:
         - deploy:
             requires:
               - build
+
+executers:
+  node-executer:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:latest
