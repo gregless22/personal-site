@@ -22,9 +22,10 @@ jobs:
     steps:
       - attach-workspace:
         at: ./dist
-      # - deploy:
-
-
+      - run:
+        name: Deploy Over SSH
+        command:
+        #  ssh $SSH_USER@$SSH_HOST "<remote deploy command>""
   # deploy to git hub
 
 workflows:
@@ -34,3 +35,6 @@ workflows:
         - deploy:
           requires:
             - build
+          filters:
+             branches:
+               only: master
