@@ -38,6 +38,7 @@ jobs:
           name: Deploy Over SSH to github
           command: |
             cd dist
+            git init
             git pull --rebase git@github.com:gregless22/gregless22.github.io.git master
             git config user.email "sayhi@circleci.com"
             git config user.name "Deployment Bot"
