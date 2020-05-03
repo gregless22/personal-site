@@ -12,14 +12,14 @@ jobs:
             - run: npm install
       - persist_to_workspace:
         root: .
-        path: 
+        paths: 
           - /dist
-  deploy:
-    executor:
-      name: node/default
-    steps:
-      - attach_workspace:
-        at: ./dist
+  # deploy:
+  #   executor:
+  #     name: node/default
+  #   steps:
+  #     - attach_workspace:
+  #       at: ./dist
       # - run:
       #   name: Deploy Over SSH
       #   command:
