@@ -37,9 +37,13 @@ jobs:
       - run:
           name: Deploy Over SSH to github
           command: |
-            git clone git@github.com:gregless22/gregless22.github.io.git temp
+            mkdir temp
+            cd temp
+            git init
+            git clone git@github.com:gregless22/gregless22.github.io.git .
             git config user.email "sayhi@circleci.com"
             git config user.name "Deployment Bot"
+            cd ..
             cp -i dist/* temp/*
             git add -A
             git commit -m 'CircleCI Deploy'
