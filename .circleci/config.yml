@@ -31,21 +31,18 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "ff:50:95:17:39:44:3c:5d:82:81:7f:87:03:ec:2e:48"
-      # - run:
-      #     name:  Add SSH to known host
-      #     command: ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
       - run:
           name: Keyscan Github (HACK)
           command: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: Deploy Over SSH to github
           command: |
-            cd dist
+            cd ./dist
             git init
             git config user.email "gregoryconnolly@gmail.com"
             git config user.name "Deployment Bot"
             git add -A
-            git commit -m 'deploy'
+            git commit -m 'CircleCI Autodeploy'
             git push -f git@github.com:gregless22/gregless22.github.io.git master
 
 workflows:
