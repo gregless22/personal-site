@@ -20,9 +20,9 @@ jobs:
     steps:
       - attach_workspace:
         at: ./dist
-      - run:
-        name: Deploy Over SSH
-        command:
+      # - run:
+      #   name: Deploy Over SSH
+      #   command:
         #  ssh $SSH_USER@$SSH_HOST "<remote deploy command>""
   # deploy to git hub
 
