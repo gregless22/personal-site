@@ -39,6 +39,7 @@ jobs:
           name: Deploy Over SSH to github
           command: |
             cd dist
+            git init
             git remote add origin git@github.com:gregless22/gregless22.github.io.git 
             git config credential.helper 'cache --timeout=120'
             git config user.email "gregoryconnolly@gmail.com"
