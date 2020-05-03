@@ -10,10 +10,10 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-      - persist_to_workspace:
-        root: .
-        paths: 
-          - /dist
+      # - persist_to_workspace:
+      #   root: .
+      #   paths: 
+      #     - /dist
   # deploy:
   #   executor:
   #     name: node/default
