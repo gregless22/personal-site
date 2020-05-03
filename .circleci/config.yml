@@ -32,11 +32,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ./dist
-      # - run:
-      #   name: Deploy Over SSH
-      #   command:
-        #  ssh $SSH_USER@$SSH_HOST "<remote deploy command>""
-  # deploy to git hub
+      - add_ssh_key:
+          fingerprints:
+            - "ff:50:95:17:39:44:3c:5d:82:81:7f:87:03:ec:2e:48"
+      - run:
+          name: Deploy Over SSH to github
+          command: ssh git@github.com:gregless22/gregless22.github.io.git "git push origin master"
+ 
 
 workflows:
     build_and_deploy:
