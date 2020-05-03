@@ -5,31 +5,17 @@ jobs:
   build:
     executor:
       name: node/default
-      working-directory: .
     steps:
       - checkout
       - node/with-cache:
           steps:
             - run: npm install
-            - persist-to-workspace:
-              paths: 
-                - /dist
+            # persist data
   deploy:
-    executor:
-      name: node/default
-      working-directory: .
-    steps:
-      - attach-workspace:
-        at: ./dist
-      # - deploy:
-
-
-  # deploy to git hub
+  # add persistant data
+  # deploy to git h
 
 workflows:
-    build_and_deploy:
+    build:
       jobs:
         - build
-        - deploy:
-          requires:
-            - build
