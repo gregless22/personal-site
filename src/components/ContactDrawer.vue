@@ -12,8 +12,7 @@
   >
     <v-container>
       Hello <br />
-      CONtent <br />fasdkj <br />sfks<br />al f<br />kl<br />ds
-      updating
+      CONtent <br />fasdkj <br />sfks<br />al f<br />kl<br />ds updating sdgsfd
       <!-- TODO get this sroted out with contact details -->
     </v-container>
   </v-navigation-drawer>
