@@ -27,7 +27,7 @@ jobs:
     executor: node-executor    
     steps:
       - attach_workspace:
-          at: dist
+          at: ~/project
       # - run: 
       #     name: Go into 'dist' directory
       #     command: cd ~/project/dist
