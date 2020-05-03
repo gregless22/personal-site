@@ -32,6 +32,9 @@ jobs:
           fingerprints:
             - "ff:50:95:17:39:44:3c:5d:82:81:7f:87:03:ec:2e:48"
       - run:
+          name:  Add SSH to known host
+          command: echo 'SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8' >> ~/.ssh/known_hosts
+      - run:
           name: Deploy Over SSH to github
           command: |
             cd dist
