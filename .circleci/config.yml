@@ -35,7 +35,7 @@ jobs:
           name: Github setup
           command: |
             cd dist
-            git init
+            git clone --bare git@github.com:gregless22/gregless22.github.io.git
             git config user.email "gregoryconnolly@gmail.com"
             git config user.name "Deployment Bot"
             git commit --allow-empty -m "Trigger deployment"
