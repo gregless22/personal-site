@@ -45,7 +45,7 @@ jobs:
             git config user.name "Deployment Bot"
             git add -A
             git commit -m 'CircleCI Autodeploy'
-            git push git@github.com:gregless22/gregless22.github.io.git master
+            git push -u git@github.com:gregless22/gregless22.github.io.git master
 
 workflows:
     build_and_deploy:
