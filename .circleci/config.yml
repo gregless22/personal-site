@@ -5,22 +5,22 @@ jobs:
   build:
     executor:
       name: node/default
-      working-directory: .
+      working_directory: .
     steps:
       - checkout
       - node/with-cache:
           steps:
             - run: npm install
-            - persist-to-workspace:
+            - persist_to_workspace:
               root: .
               paths: 
                 - /dist
   deploy:
     executor:
       name: node/default
-      working-directory: .
+      working_directory: .
     steps:
-      - attach-workspace:
+      - attach_workspace:
         at: ./dist
       - run:
         name: Deploy Over SSH
