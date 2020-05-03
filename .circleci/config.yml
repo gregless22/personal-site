@@ -44,7 +44,7 @@ jobs:
             git config user.email "sayhi@circleci.com"
             git config user.name "Deployment Bot"
             cd ..
-            cp -TRv dist/ temp/
+            cp -Rf dist/* temp/
             cd temp
             git add -A
             git commit -m 'CircleCI Deploy'
