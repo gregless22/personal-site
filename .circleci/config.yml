@@ -1,15 +1,23 @@
 version: 2.1
-orbs:
-  node: circleci/node@2.0.3
 jobs:
   build:
-    executor:
-      name: node/default
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:10.16.3
     steps:
       - checkout
-      - node/with-cache:
-        steps:
-          - run: npm install
+      - run:
+          name: update-npm
+          command: "sudo npm install -g npm@5"
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: install-packages
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
           # - persist_to_workspace:
           #   root: ~/project
           #   path: /dist
