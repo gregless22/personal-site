@@ -36,16 +36,19 @@ jobs:
           fingerprints:
             - "ff:50:95:17:39:44:3c:5d:82:81:7f:87:03:ec:2e:48"
       - run:
-          name: Deploy Over SSH to github
+          name: Github setup
           command: |
             cd dist
             git init
-            git remote add origin git@github.com:gregless22/gregless22.github.io.git 
-            git config credential.helper 'cache --timeout=120'
             git config user.email "gregoryconnolly@gmail.com"
             git config user.name "Deployment Bot"
             git commit --allow-empty -m "Trigger deployment"
-            git push -q
+      - run:
+          name: Deploy Over SSH to github
+          command: |
+            git remote add origin git@github.com:gregless22/gregless22.github.io.git 
+            git config credential.helper 'cache --timeout=120'
+            git push -u origin master
 
 workflows:
     build_and_deploy:
