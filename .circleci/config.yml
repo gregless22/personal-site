@@ -37,9 +37,7 @@ jobs:
       - run:
           name: Deploy Over SSH to github
           command: |
-            mkdir temp
-            cd temp
-            git clone git@github.com:gregless22/gregless22.github.io.git master
+            git clone git@github.com:gregless22/gregless22.github.io.git temp
             git config user.email "sayhi@circleci.com"
             git config user.name "Deployment Bot"
             cp -i dist/* temp/*
