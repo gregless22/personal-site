@@ -55,7 +55,7 @@ workflows:
               - build
 
 executers:
-  node-executer:
-    working_directory: ~/project
-    docker:
-      - image: circleci/node:latest
+    node-executer:
+      working_directory: ~/project
+      docker:
+        - image: circleci/node:latest
