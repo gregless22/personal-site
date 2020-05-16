@@ -8,12 +8,14 @@
     :permanent="permanent"
     :src="bg"
     app
-    clipped
   >
     <v-container>
-      Hello <br />
-      CONtent <br />fasdkj <br />sfks<br />al f<br />kl<br />ds updating sdgsfd
-      <!-- TODO get this sroted out with contact details -->
+      <v-row align-content="center" justify="center">
+        <v-col>
+          <h1>CONTACT</h1>
+        </v-col>
+      </v-row>
+      <v-row> </v-row>
     </v-container>
   </v-navigation-drawer>
 </template>

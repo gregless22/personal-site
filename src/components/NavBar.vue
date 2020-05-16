@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app clipped-left flat>
+  <v-app-bar app flat>
     <v-toolbar-title>Greg Connolly</v-toolbar-title>
     <v-spacer></v-spacer>
     <!-- need to work on this spacing etc -->
