@@ -15,7 +15,13 @@
           <h1>CONTACT</h1>
         </v-col>
       </v-row>
-      <v-row> </v-row>
+      <v-row>
+        <v-col>
+          <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
+          <h3>Location:</h3>
+          <h4>Pottsville, NSW</h4>
+        </v-col>
+      </v-row>
     </v-container>
   </v-navigation-drawer>
 </template>
