@@ -16,11 +16,28 @@
         </v-col>
       </v-row>
       <v-row>
+        <v-col></v-col>
         <v-col>
-          <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-          <h3>Location:</h3>
-          <h4>Pottsville, NSW</h4>
+          <v-row>
+            <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
+            <!--  TODO space required here -->
+            <h3>Location:</h3>
+          </v-row>
         </v-col>
+
+        <h4>Pottsville, NSW</h4>
+      </v-row>
+      <v-row>
+        <font-awesome-icon :icon="['fas', 'phone']" />
+      </v-row>
+      <v-row>
+        <font-awesome-icon :icon="['fas', 'envelope']" />
+      </v-row>
+      <v-row>
+        <font-awesome-icon :icon="['fab', 'github']" />
+      </v-row>
+      <v-row>
+        <font-awesome-icon :icon="['fab', 'linkedin']" />
       </v-row>
     </v-container>
   </v-navigation-drawer>
