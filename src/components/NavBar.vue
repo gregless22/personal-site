@@ -8,9 +8,6 @@
         <v-btn to="/" text dark min-width="200">
           Home
         </v-btn>
-        <v-btn to="/about" text dar min-width="200">
-          About
-        </v-btn>
       </v-col>
     </v-row>
   </v-app-bar>
