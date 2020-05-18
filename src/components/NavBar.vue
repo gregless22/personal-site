@@ -1,12 +1,15 @@
 <template>
   <v-app-bar app flat>
-    <v-toolbar-title>Greg Connolly</v-toolbar-title>
+    <v-toolbar-title>Greg Connolly CV</v-toolbar-title>
     <v-spacer></v-spacer>
     <!-- need to work on this spacing etc -->
     <v-row>
       <v-col>
         <v-btn to="/" text dark min-width="200">
           Home
+        </v-btn>
+        <v-btn to="/about" text dar min-width="200">
+          About
         </v-btn>
       </v-col>
     </v-row>

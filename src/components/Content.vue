@@ -2,15 +2,15 @@
   <v-content>
     <!-- <router-view /> -->
     <!-- TODO Get all view and put in a card -->
-    <Home />
+    <About />
   </v-content>
 </template>
 
 <script>
-import Home from "@/views/Home";
+import About from "@/views/About";
 export default {
   components: {
-    Home
+    About
   }
 };
 </script>
