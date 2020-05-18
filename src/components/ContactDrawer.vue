@@ -9,42 +9,31 @@
     :src="bg"
     app
   >
+    <!-- TODO move down to the center -->
+
     <v-container>
-      <v-row align-content="center" justify="center">
+      <v-row>
         <v-col>
           <h1>CONTACT</h1>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col></v-col>
-        <v-col>
-          <v-row>
-            <font-awesome-icon :icon="['fas', 'map-marker-alt']" />
-            <!--  TODO space required here -->
-            <h3>Location:</h3>
-          </v-row>
-        </v-col>
-
-        <h4>Pottsville, NSW</h4>
-      </v-row>
-      <v-row>
-        <font-awesome-icon :icon="['fas', 'phone']" />
-      </v-row>
-      <v-row>
-        <font-awesome-icon :icon="['fas', 'envelope']" />
-      </v-row>
-      <v-row>
-        <font-awesome-icon :icon="['fab', 'github']" />
-      </v-row>
-      <v-row>
-        <font-awesome-icon :icon="['fab', 'linkedin']" />
-      </v-row>
+      <span v-for="(list, index) in lists" :key="index">
+        <AboutList
+          :icon="list.icon"
+          :text="list.text"
+          :link="list.link"
+        ></AboutList>
+      </span>
     </v-container>
   </v-navigation-drawer>
 </template>
 
 <script>
+import AboutList from "@/components/AboutList";
 export default {
+  components: {
+    AboutList
+  },
   // TODO clean up all the excess data
   data() {
     return {
@@ -53,7 +42,31 @@ export default {
       permanent: true,
       miniVariant: false,
       expandOnHover: false,
-      background: true
+      background: true,
+      lists: [
+        {
+          icon: ["fas", "map-marker-alt"],
+          text: "Pottsville, NSW"
+        },
+        {
+          icon: ["fas", "phone"],
+          text: "0456 636 779"
+        },
+        {
+          icon: ["fas", "envelope"],
+          text: "gregoryconnolly@gmail.com"
+        },
+        {
+          icon: ["fab", "github"],
+          text: "Github",
+          link: "https://github.com/gregless22"
+        },
+        {
+          icon: ["fab", "linkedin"],
+          text: " LinkedIn",
+          link: "www.linkedin.com/in/greg-connolly-0413441b"
+        }
+      ]
     };
   },
   computed: {
