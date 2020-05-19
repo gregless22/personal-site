@@ -6,9 +6,6 @@
     <v-row>
       <v-col>
         <v-btn to="/" text dark min-width="150">
-          Home
-        </v-btn>
-        <v-btn to="/about" text dar min-width="150">
           About
         </v-btn>
         <v-btn to="/education" text dar min-width="150">

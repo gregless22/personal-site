@@ -1,14 +1,11 @@
 <template>
   <v-navigation-drawer
-    width="512"
+    width="400"
     v-model="drawer"
     :color="color"
-    :expand-on-hover="expandOnHover"
-    :mini-variant="miniVariant"
-    :permanent="permanent"
     :src="bg"
     app
-    absolute
+    fixed
   >
     <!-- TODO move down to the center -->
 
@@ -40,9 +37,6 @@ export default {
     return {
       drawer: true,
       color: "primary",
-      permanent: true,
-      miniVariant: false,
-      expandOnHover: false,
       background: true,
       lists: [
         {

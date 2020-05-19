@@ -3,7 +3,7 @@
     <!-- <router-view /> -->
     <!-- TODO Get all view and put in a card -->
     <About />
-    <Education />
+    <!-- <Education /> -->
     <Experience />
     <Interests />
     <Skills />
@@ -12,14 +12,14 @@
 
 <script>
 import About from "@/views/About";
-import Education from "@/views/Education";
+// import Education from "@/views/Education";
 import Experience from "@/views/Experience";
 import Interests from "@/views/Interests";
 import Skills from "@/views/Skills";
 export default {
   components: {
     About,
-    Education,
+    // Education,
     Experience,
     Interests,
     Skills
