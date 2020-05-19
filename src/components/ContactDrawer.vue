@@ -8,6 +8,7 @@
     :permanent="permanent"
     :src="bg"
     app
+    absolute
   >
     <!-- TODO move down to the center -->
 
@@ -18,21 +19,21 @@
         </v-col>
       </v-row>
       <span v-for="(list, index) in lists" :key="index">
-        <AboutList
+        <ContactList
           :icon="list.icon"
           :text="list.text"
           :link="list.link"
-        ></AboutList>
+        ></ContactList>
       </span>
     </v-container>
   </v-navigation-drawer>
 </template>
 
 <script>
-import AboutList from "@/components/AboutList";
+import ContactList from "@/components/ContactList";
 export default {
   components: {
-    AboutList
+    ContactList
   },
   // TODO clean up all the excess data
   data() {
