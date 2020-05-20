@@ -57,76 +57,73 @@ export default {
   data: () => ({
     degrees: [
       {
-        left: true,
         startYear: 2017,
         finishYear: 2019,
         school: "Royal Melbourne Institute of Technology",
         title: "Bachelor of Information Technology",
-        image: "./rmit.jpeg"
+        image: "timeline/rmit.jpg"
       },
       {
-        left: true,
         startYear: 2016,
         finishYear: 2016,
         school: "Queensland University of Technology",
         title: "Master of Intelectual Property",
-        image: "./qut.jpeg"
+        image: "timeline/qut.jpg"
       },
       {
-        left: true,
         startYear: 2002,
         finishYear: 2006,
         school: "University of Queensland",
         title: "Bachelor of Engineering Chemical (Honours IIB)",
-        image: "./uq.jpeg"
+        image: "timeline/uq.jpg"
       }
     ],
     experiences: [
       {
-        side: "right",
         startYear: 2019,
         startMonth: "July",
         finishYear: "Current",
         title: "Process Compliance Engineer / Programmer",
         company: "Newcrest",
         location: "Lihir Island, Papua New Guniea",
+        image: "timeline/newcrest.jpg",
         tasks: "Maintaining compliance",
         achievements:
           "Engineering compliance for project department. Electrical licensing management software development."
       },
       {
-        side: "right",
         startYear: 2014,
         startMonth: "January",
         finishYear: 2015,
         finishMonth: "November",
         title: "Operations Engineer",
         company: "Santos",
-        locations: "Ballera Gas Center, Australia",
+        location: "Ballera Gas Center, Australia",
+        image: "timeline/santos.jpg",
         tasks: "Making Gas",
         achievements: "Engineer"
       },
       {
-        side: "right",
         startYear: 2010,
         startMonth: "September",
         finishYear: 2013,
         finishMonth: "July",
         title: "Senior Facilites Engineer",
         company: "Shell / Spectra Energy",
-        locations: "Fort St John / Vancouver, Canada",
+        location: "Fort St John / Vancouver, Canada",
+        image: "timeline/shell.jpg",
         tasks: "Making More Gas",
         achievements: "Engineer"
       },
       {
-        side: "right",
         startYear: 2007,
         startMonth: "August",
         finishYear: 2009,
         finishMonth: "October",
         title: "Graduate Process Engineer",
         company: "Worley Parsons",
-        locations: "Brisbane Australia",
+        location: "Brisbane Australia",
+        image: "timeline/caltex.jpg",
         tasks: "Designing oil refineries",
         achievements: "Engineer"
       }
@@ -144,3 +141,12 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.v-timeline-item--after {
+  text-align: right;
+}
+.v-timeline-item--before {
+  text-align: left;
+}
+</style>

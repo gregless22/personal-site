@@ -1,26 +1,33 @@
 <template>
-  <div class="about">
-    <v-container>
-      <v-row>
-        <h1>G'Day</h1>
-      </v-row>
-      <v-row>
+  <v-container>
+    <v-row class="about">
+      <v-col cols="1"></v-col>
+      <v-col cols="10" align="left">
+        <v-row no-gutters>
+          <h1>G'Day</h1>
+        </v-row>
+
         <h2>I'm Greg Connolly</h2>
-      </v-row>
-      <v-row>
         <p>
           I used to be a Chemical Engineer, but have launched into a new career
           path in Software Development. I love the challange of building new
           software, experimenting with new programming languages and the
           everychanging landscape of the tech industry.
         </p>
-      </v-row>
-    </v-container>
-  </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+h1 {
+  margin: 20px 0px;
+}
+h2 {
+  margin: 10px 0px;
+}
 .about {
-  height: 100vh;
+  height: 75vh;
+  padding: 200px 0px 0px 0px;
 }
 </style>

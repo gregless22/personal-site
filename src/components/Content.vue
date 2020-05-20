@@ -1,28 +1,33 @@
 <template>
   <v-content>
-    <!-- <router-view /> -->
-    <!-- TODO Get all view and put in a card -->
-    <About />
-    <!-- <Education /> -->
-    <Experience />
-    <Interests />
-    <Skills />
+    <about />
+    <v-divider inset class="divider"></v-divider>
+    <timeline />
+    <v-divider inset class="divider"></v-divider>
+    <skills />
+    <v-divider inset class="divider"></v-divider>
+    <interests />
   </v-content>
 </template>
 
 <script>
 import About from "@/views/About";
-// import Education from "@/views/Education";
-import Experience from "@/views/Experience";
+
+import Timeline from "@/views/Timeline";
 import Interests from "@/views/Interests";
 import Skills from "@/views/Skills";
 export default {
   components: {
     About,
-    // Education,
-    Experience,
+    Timeline,
     Interests,
     Skills
   }
 };
 </script>
+
+<style lang="css" scoped>
+.divider {
+  margin: 100px 30px 100px 30px;
+}
+</style>

@@ -5,19 +5,19 @@
     <!-- need to work on this spacing etc -->
     <v-row>
       <v-col>
-        <v-btn to="/" text dark min-width="150">
+        <v-btn to="/" text>
           About
         </v-btn>
-        <v-btn to="/education" text dar min-width="150">
+        <v-btn to="/education" text>
           Education
         </v-btn>
-        <v-btn to="/experience" text dar min-width="150">
+        <v-btn to="/experience" text>
           Experience
         </v-btn>
-        <v-btn to="/interests" text dar min-width="150">
+        <v-btn to="/interests" text>
           Interests
         </v-btn>
-        <v-btn to="/skills" text dar min-width="150">
+        <v-btn to="/skills" text>
           Skills
         </v-btn>
       </v-col>

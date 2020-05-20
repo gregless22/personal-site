@@ -7,8 +7,6 @@
     app
     fixed
   >
-    <!-- TODO move down to the center -->
-
     <v-container>
       <v-row>
         <v-col>
