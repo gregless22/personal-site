@@ -4,6 +4,7 @@
     v-model="drawer"
     :color="color"
     :src="bg"
+    :mobile-break-point="mobileBreakPoint"
     app
     fixed
   >
@@ -33,7 +34,8 @@ export default {
   // TODO clean up all the excess data
   data() {
     return {
-      drawer: true,
+      mobileBreakPoint: 1350,
+      drawer: null,
       color: "primary",
       background: true,
       lists: [
@@ -65,6 +67,9 @@ export default {
   computed: {
     bg() {
       return this.background ? "./sidebar.jpg" : undefined;
+    },
+    mini() {
+      return window.innerWidth < 1000 ? true : false;
     }
   }
 };
